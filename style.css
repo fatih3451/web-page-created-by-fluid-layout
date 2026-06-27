@@ -10,10 +10,11 @@ body {
     color: #333;
 }
 
-/* 2. SABİT GENİŞLİK DÜZENİ (1200px FIXED LAYOUT) */
+/* 2. ESNEK GENİŞLİK DÜZENİ (FLUID LAYOUT) - DEĞİŞTİ */
 .container {
-    width: 1200px;
-    margin: 0 auto; /* Sayfayı ortalar */
+    max-width: 1200px; /* En fazla 1200px olur */
+    width: 90%;        /* Küçük ekranlarda ekranın %90'ını kaplar */
+    margin: 0 auto;    /* Sayfayı ortalar */
     background-color: #ffffff;
 }
 
@@ -59,14 +60,16 @@ nav ul li a:hover {
     padding-bottom: 10px;
 }
 
-/* 5. MENU & SPECIALS (FLEXBOX YAN YANA DÜZEN) */
+/* 5. MENU & SPECIALS (FLUID FLEXBOX) - DEĞİŞTİ */
 .menu-grid {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Kartlar sığmazsa alt satıra geçer */
+    gap: 20px;       /* Kartlar arasındaki esnek boşluk */
     margin-bottom: 50px;
 }
 .menu-item {
-    width: 360px; /* 3 adet ürün yan yana sığacak şekilde */
+    flex: 1 1 300px; /* Kartlar ekrana göre esner, minimum 300px olur */
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
