@@ -1,63 +1,71 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Station Burger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+    <!-- CSS dosyasını buradaki link etiketi ile bağlıyoruz -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Ana Kapsayıcı (960px Sabit Genişlik) -->
-    <div id="wrapper">
-        
-        <!-- Header / Logo ve Menü -->
+    <!-- Tüm içeriği 1200px içinde tutan ana kapsayıcı -->
+    <div class="container">
+
+        <!-- HEADER & NAVIGATION -->
         <header>
-            <div id="logo">STATION BURGER</div>
+            <h1>BURGER HOUSE</h1>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
-            <div class="clear"></div>
         </header>
 
-        <!-- Büyük Banner Görseli -->
-        <div id="banner">
-            <div id="banner-text">THE BEST BURGERS IN TOWN</div>
-        </div>
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            
+            <!-- Restaurant Menu -->
+            <h2 class="section-title">Our Delicious Menu</h2>
+            
+            <div class="menu-grid">
+                <!-- Burger 1 -->
+                <div class="menu-item">
+                    <h3>Classic Burger</h3>
+                    <p>Beef patty, lettuce, tomato, pickles, and our special house sauce.</p>
+                    <div class="price">$8.99</div>
+                </div>
 
-        <!-- Öne Çıkan Burgerler / Menü Bölümü -->
-        <main>
-            <h1>Our Signature Burgers</h1>
-            <!-- Burger 1 -->
-            <div class="burger-box">
-    
-                <h3>Classic Burger</h3>
-                <p>150gr beaf meetball, lettuce, tomoto, special sauce.</p>
-                <span class="price">5 euro</span>
+                <!-- Burger 2 -->
+                <div class="menu-item">
+                    <h3>Cheese Master</h3>
+                    <p>Double cheddar cheese, crispy onions, and smoked BBQ sauce.</p>
+                    <div class="price">$9.99</div>
+                </div>
+
+                <!-- Burger 3 -->
+                <div class="menu-item">
+                    <h3>Spicy Volcano</h3>
+                    <p>Jalapenos, spicy mayo, pepper jack cheese, and hot salsa.</p>
+                    <div class="price">$10.49</div>
+                </div>
             </div>
 
-            <!-- Burger 2 -->
-            <div class="burger-box">
-                <h3>Cheeseburger</h3>
-                <p>Extra melted cheddar cheese</p>
-                <span class="price">5 euro</span>
+            <!-- Specials Section -->
+            <div class="specials">
+                <h2>WEEKEND SPECIAL</h2>
+                <p>Buy 2 Burger Menus, Get 1 Free Fries & Drink! Only valid on Saturdays and Sundays.</p>
             </div>
 
-            <!-- Burger 3 -->
-            <div class="burger-box last-box">
-                <h3>Acılı BBQ Burger</h3>
-                <p>Smoked beef, jalapeno pappers and barbecue sauce.</p>
-                <span class="price">7 euro</span>
-            </div>
-
-            <div class="clear"></div>
         </main>
 
-        <!-- Footer / Alt Bilgi -->
+        <!-- FOOTER -->
         <footer>
-            <p> 2026 Station Burger. All Rights Reserved.</p>
+            <p>&copy; 2026 Burger House Restaurant. All Rights Reserved.</p>
+            <p>123 Burger Street, Food City | Tel: (555) 123-4567</p>
         </footer>
 
     </div>
